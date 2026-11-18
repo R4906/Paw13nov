@@ -1,11 +1,25 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function Counter() {
-    const [angka, setangka] = React.useState(0)
-  return (
+    const [angka, setangka] = useState(0)
+
+    const handleDecrement = () => {
+        setangka(angka - 1)
+    }
+
+    const handleIncrement = () => {
+        setangka(angka + 1)
+    }
+
+    return (
     <div>
-        <h1>{angka}</h1>
-        <button className='btn btn-primary'>inc</button>
+        <div className='form-control'>{angka}</div>
+        <button className='btn btn-primary' onClick={handleDecrement}>
+            dec
+        </button>
+        <button className='btn btn-primary' onClick={handleIncrement}>
+            inc
+        </button>
     </div>
   )
 }
