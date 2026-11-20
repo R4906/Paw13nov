@@ -1,7 +1,6 @@
 import React from 'react'
 import Counter from './components/counter'
 import ThemeSwap from './components/ThemeSwap'
-
   const App = () => {
   return (
     <div>
@@ -15,6 +14,5 @@ import ThemeSwap from './components/ThemeSwap'
     </div>
   )
 }
-
 
 export default App
